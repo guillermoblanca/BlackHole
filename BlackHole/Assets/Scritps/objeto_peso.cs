@@ -23,10 +23,25 @@ public class objeto_peso : MonoBehaviour {
 	}
 		void OnCollisionEnter2D (Collision2D objeto)
 		{
-		if (objeto.transform.tag == "player") {
-			objetoColor == scriptpersonaje.ColorPersonaje;
-
+		if (objeto.transform.tag == "Player")
+		{
+			if (objetoColor == Coloreado.Gris)
+			{
+				scriptpersonaje.ColorPersonaje = Coloreado.Gris;
+			}
+			if (objetoColor == Coloreado.Rojo)
+			{
+				scriptpersonaje.ColorPersonaje = Coloreado.Rojo;
+			}
+			if (objetoColor == Coloreado.Verde)
+			{
+				scriptpersonaje.ColorPersonaje = Coloreado.Verde;
+			}
+			if (objetoColor == Coloreado.Azul)
+			{
+				scriptpersonaje.ColorPersonaje = Coloreado.Azul;
+			}
+		
 		}
-		}
-	}
+	}}
 

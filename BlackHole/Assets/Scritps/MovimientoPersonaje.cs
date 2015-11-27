@@ -36,7 +36,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		}
 		if (Input.GetKey(KeyCode.Space))
 		{
-			rg.AddForce (new Vector2(0,fuerzaSalto));
+
 		}
 	}
 	void OnCollisionEnter2D (Collision2D objeto)
@@ -53,6 +53,10 @@ public class MovimientoPersonaje : MonoBehaviour {
 	void MoverDrch(float velocidad)
 	{
 		rg.velocity = new Vector2(velocidad,0);
+	}
+	void Salto()
+	{
+		rg.AddForce (new Vector2(0,fuerzaSalto));
 	}
 
 }
