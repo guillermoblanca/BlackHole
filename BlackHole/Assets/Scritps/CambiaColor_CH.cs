@@ -7,6 +7,8 @@ public enum Coloreado
 public class CambiaColor_CH : MonoBehaviour {
 	public Coloreado ColorPersonaje; // caracteristica que variara algunas habilidades del personaje
 	// no se puede optimizar con el spriterenderer, debe resolverse prioridad 1
+
+	// hemos querido dividir en voids los colores para meterle habilidades si hay tiempo 
 	void Awake ()
 	{
 		ColorPersonaje = Coloreado.Gris; // inicia siempre en gris
