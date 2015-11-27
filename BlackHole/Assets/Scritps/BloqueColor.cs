@@ -20,6 +20,7 @@ public class BloqueColor : MonoBehaviour
 	}
 	void Update()
 	{
+		ColoresBloque();
 		if (Input.GetKeyDown (KeyCode.S))
 		{
 			botonpulsa = true;
