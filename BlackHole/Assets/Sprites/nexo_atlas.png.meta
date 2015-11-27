@@ -1,27 +1,19 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
 guid: ae3b930579c625244950a746c896ef5c
-timeCreated: 1448649943
-=======
-guid: b523d20b1e05104438c4a96c46c7927e
-timeCreated: 1448648656
-=======
-<<<<<<< HEAD
-guid: ff617d90494762c4889b9ccb42fb993f
-timeCreated: 1448648505
->>>>>>> origin/master
-=======
-guid: 281e391d36e1f0a448a09c70155d19f1
-timeCreated: 1448648679
->>>>>>> origin/master
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
->>>>>>> origin/master
+timeCreated: 1448659137
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: nexo_atlas_0
+    21300002: nexo_atlas_1
+    21300004: nexo_atlas_2
+    21300006: nexo_atlas_3
+    21300008: nexo_atlas_4
+    21300010: nexo_atlas_5
+    21300012: nexo_atlas_6
+    21300014: nexo_atlas_7
+    21300016: nexo_atlas_8
+    21300018: nexo_atlas_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -56,7 +48,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +59,107 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: nexo_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 302
+        width: 127
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 302
+        width: 130
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 287
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 258
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 34
+        width: 148
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 187
+        width: 147
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 172
+        width: 219
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 148
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 0
+        width: 148
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nexo_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 86
+        width: 192
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
