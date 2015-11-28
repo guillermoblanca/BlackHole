@@ -74,7 +74,7 @@ public class EnemigoColor : MonoBehaviour {
 			destino = PuntoB.position;
 			origen = PuntoA.position;
 			posicion = 0;
-			transform.localScale =new Vector2 (1f,1f)*2;
+			transform.localScale = new Vector2 (-1f,1f);
 			//Debug.Log("En A");
 		}
 		
@@ -83,7 +83,7 @@ public class EnemigoColor : MonoBehaviour {
 			destino = PuntoA.position;
 			origen = PuntoB.position;
 			posicion = 0;
-			transform.localScale = new Vector2 (-1f,1f)*2;
+			transform.localScale = new Vector2 (1f,1f);
 			//Debug.Log("En B");
 		}
 		transform.position = Vector3.Lerp (origen, destino, posicion); 
