@@ -6,9 +6,10 @@ public class MovimientoPersonaje : MonoBehaviour {
 
 	[Range (0,10)] public float velocidad = 10f;
 	public float fuerzaSalto;
-	public bool enSalto;
-	public bool miraIzq;
-	public bool enSuelo;
+	public LayerMask capa;
+	bool enSalto;
+	bool miraIzq;
+	bool enSuelo;
 	Transform detectorSuelo;
 	// falta que salte solo una vez 
 	Rigidbody2D rg;
@@ -24,6 +25,8 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	void Update() // Controles
 	{
+
+
 		Controles();
 	}
 	void MoverIzq(float velocidad)
@@ -40,8 +43,12 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	 void Salto()
 	{
+		RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);
+		if (hitdown.collider != null)
+		{
 		rg.velocity = new Vector2(0,fuerzaSalto);
-	}
+		}
+		}
 	void Flip()
 	{
 		if (miraIzq)
