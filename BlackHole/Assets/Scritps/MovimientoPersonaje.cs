@@ -7,20 +7,21 @@ public class MovimientoPersonaje : MonoBehaviour {
 	public float fuerzaSalto;
 	public bool enSalto;
 	public bool miraIzq;
-
-	CircleCollider2D detectorSuelo;
-
+	public bool enSuelo;
+	Transform detectorSuelo;
+	// falta que salte solo una vez 
 	Rigidbody2D rg;
 	void Awake()
 	{
-		detectorSuelo = GameObject.Find ("ComprobadorSuelo").GetComponent<CircleCollider2D>();
 		rg= GetComponent<Rigidbody2D>();
 	}
 	void Update() // Controles
 	{
+
 		if (Input.GetKey(KeyCode.A)) // izq
 		{
 			MoverIzq(velocidad);
+			Flip();
 		}
 		if (Input.GetKeyUp(KeyCode.A)) //izq
 		{
@@ -29,6 +30,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D))// drcha
 		{
 			MoverDrch(velocidad);
+			Flip();
 		}
 		if (Input.GetKeyUp(KeyCode.D))// drcha
 		{
@@ -36,27 +38,33 @@ public class MovimientoPersonaje : MonoBehaviour {
 		}
 		if (Input.GetKey(KeyCode.Space))
 		{
-
-		}
-	}
-	void OnCollisionEnter2D (Collision2D objeto)
-	{
-		if (detectorSuelo)
-		{
-			Debug.Log ("toco algo");
+			Salto ();
 		}
 	}
 	void MoverIzq(float velocidad)
 	{
-		rg.velocity = new Vector2 (-velocidad, 0);
+		rg.AddForce (new Vector2 (-velocidad, 0));
+		miraIzq = true;
 	}
 	void MoverDrch(float velocidad)
 	{
-		rg.velocity = new Vector2(velocidad,0);
+		rg.AddForce  (new Vector2(velocidad,0));
+		miraIzq = false;
 	}
-	void Salto()
+	 void Salto()
 	{
 		rg.AddForce (new Vector2(0,fuerzaSalto));
 	}
-
+	void Flip()
+	{
+		if (miraIzq)
+		{
+			transform.localScale = new Vector2 (-1f,1f);
+		}
+		if (!miraIzq)
+		{
+			transform.localScale = new Vector2 (1f,1f);
+		}
+	}
 }
+
