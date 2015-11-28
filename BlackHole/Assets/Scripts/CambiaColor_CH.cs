@@ -6,7 +6,7 @@ public enum Coloreado
 }
 public class CambiaColor_CH : MonoBehaviour {
 	public Coloreado ColorPersonaje; // caracteristica que variara algunas habilidades del personaje
-	// no se puede optimizar con el spriterenderer, debe resolverse prioridad 1
+		// no se puede optimizar con el spriterenderer, debe resolverse prioridad 1
 
 	// hemos querido dividir en voids los colores para meterle habilidades si hay tiempo 
 	void Awake ()
@@ -39,7 +39,7 @@ public class CambiaColor_CH : MonoBehaviour {
 	} 
 	void Gris(){
 		GetComponent<SpriteRenderer>().color  = new Color (1f,1f,1f); // el color es el mismo de el inicio
-	}
+	}	
 	void Rojo()
 	{
 		GetComponent<SpriteRenderer>().color = new Color (1f,0f,0f); // color rojo
