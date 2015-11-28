@@ -6,7 +6,8 @@ public class teletransportacion : MonoBehaviour {
 	private GameObject destino;  //GameObject 
 	public bool activo = false;
 	public string nombre;
-	 public bool dentro = false; 
+	 public bool dentro = false;
+	bool pulsado_tecla = false;
 	bool pulsado; 
 	GameObject Player;
 	void Awake (){
@@ -16,14 +17,24 @@ public class teletransportacion : MonoBehaviour {
 
 	void Update(){
 
-		if (Input.GetKeyDown (KeyCode.W) && dentro) {
-			Player.transform.position= destino.transform.position;
-			Debug.Log("tecla pulsada");
+		if (Input.GetKeyDown (KeyCode.W)) {
+			pulsado_tecla = true;
 
+		} else {
+			pulsado_tecla = false;
 		}
 
 
 
+	}
+
+	void FixedUpdate(){
+		if (pulsado_tecla && dentro) {
+			dentro = false;
+			pulsado_tecla = false;
+			Player.transform.position= destino.transform.position;
+			Debug.Log("tecla pulsada");
+		}
 	}
 	void OnTriggerStay2D (Collider2D col){  //se activa cuando algo se colisiona 
 		if (col.transform.tag == "Player"  ) {
