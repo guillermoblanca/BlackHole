@@ -50,6 +50,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (hitdown.collider != null)
 		{
 		rg.velocity = new Vector2(0,fuerzaSalto);
+			sonido.Play ();
 		}
 		}
 	void Flip()
@@ -91,7 +92,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Salto ();
-			sonido.Play ();
+
 		}
 	}
 }
