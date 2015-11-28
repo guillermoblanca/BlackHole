@@ -17,7 +17,35 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	void Update() // Controles
 	{
-
+		Controles();
+	}
+	void MoverIzq(float velocidad)
+	{
+		rg.AddForce (new Vector2 (-velocidad, 0));
+		miraIzq = true;
+	}
+	void MoverDrch(float velocidad)
+	{
+		rg.velocity  = new Vector2(velocidad,0);
+		miraIzq = false;
+	}
+	 void Salto()
+	{
+		rg.velocity = new Vector2(0,fuerzaSalto);
+	}
+	void Flip()
+	{
+		if (miraIzq)
+		{
+			transform.localScale = new Vector2 (-1f,1f);
+		}
+		if (!miraIzq)
+		{
+			transform.localScale = new Vector2 (1f,1f);
+		}
+	}
+	void Controles()
+	{
 		if (Input.GetKey(KeyCode.A)) // izq
 		{
 			MoverIzq(velocidad);
@@ -39,31 +67,6 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Space))
 		{
 			Salto ();
-		}
-	}
-	void MoverIzq(float velocidad)
-	{
-		rg.AddForce (new Vector2 (-velocidad, 0));
-		miraIzq = true;
-	}
-	void MoverDrch(float velocidad)
-	{
-		rg.AddForce  (new Vector2(velocidad,0));
-		miraIzq = false;
-	}
-	 void Salto()
-	{
-		rg.AddForce (new Vector2(0,fuerzaSalto));
-	}
-	void Flip()
-	{
-		if (miraIzq)
-		{
-			transform.localScale = new Vector2 (-1f,1f);
-		}
-		if (!miraIzq)
-		{
-			transform.localScale = new Vector2 (1f,1f);
 		}
 	}
 }
