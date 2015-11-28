@@ -18,5 +18,11 @@ public class botonMenuInicioON : MonoBehaviour {
 		Debug.Log ("Pulsado");
 
 	}
-	
+
+	public void sacaMenu ()
+	{
+		
+		anim.SetBool ("cargamenu", false);
+		Debug.Log ("Pulsado");
+}
 }

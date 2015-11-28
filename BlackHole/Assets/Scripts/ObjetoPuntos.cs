@@ -18,7 +18,7 @@ void OnTriggerEnter2D (Collider2D objeto)
 	{
 		if (objeto.transform.tag == "Player" )
 		{
-			Debug.Log("hago algo");
+			//Debug.Log("hago algo");
 			gc.Da_Puntos(5);
 			Destroy(gameObject);
 

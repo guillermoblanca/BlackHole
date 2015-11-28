@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1d2582e67c1a2ac4db5d66922c6f7d0b
-timeCreated: 1448719448
+guid: 895737b957174054f8d7476faa633993
+timeCreated: 1448740941
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -41,7 +41,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -147,23 +147,23 @@ TextureImporter:
     - name: cycloghostfinal_8
       rect:
         serializedVersion: 2
-        x: 98
-        y: 88
-        width: 83
-        height: 109
+        x: 99
+        y: 39
+        width: 151
+        height: 158
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: cycloghostfinal_9
       rect:
         serializedVersion: 2
         x: 195
-        y: 91
+        y: 82
         width: 74
-        height: 117
+        height: 126
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 3}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: cycloghostfinal_10
       rect:
         serializedVersion: 2
