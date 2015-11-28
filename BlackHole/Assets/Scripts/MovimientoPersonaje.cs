@@ -5,12 +5,14 @@ public class MovimientoPersonaje : MonoBehaviour {
 
 
 	[Range (0,10)] public float velocidad = 10f;
+	private AudioSource sonido;
 	public float fuerzaSalto;
 	public LayerMask capa;
 	bool enSalto;
 	bool miraIzq;
 	bool enSuelo;
 	Transform detectorSuelo;
+
 	// falta que salte solo una vez 
 	Rigidbody2D rg;
 	Animator anim;
@@ -22,6 +24,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 	{
 		anim = GetComponent <Animator> ();
 		rg= GetComponent<Rigidbody2D>();
+		sonido = GetComponent<AudioSource> ();
 	}
 	void Update() // Controles
 	{
@@ -47,6 +50,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (hitdown.collider != null)
 		{
 		rg.velocity = new Vector2(0,fuerzaSalto);
+			sonido.Play ();
 		}
 		}
 	void Flip()
@@ -88,6 +92,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Salto ();
+
 		}
 	}
 }
