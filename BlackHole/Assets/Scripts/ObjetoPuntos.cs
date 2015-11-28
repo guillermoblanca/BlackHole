@@ -7,7 +7,8 @@ public class ObjetoPuntos : MonoBehaviour {
 	GameControl gc;
 	void Awake()
 	{
-		gc = GetComponent<GameControl>();
+
+		gc = GameObject.Find ("Game_Control").GetComponent<GameControl>();
 	}
 	void Update()
 	{
@@ -17,8 +18,9 @@ void OnTriggerEnter2D (Collider2D objeto)
 	{
 		if (objeto.transform.tag == "Player" )
 		{
+			Debug.Log("hago algo");
 			gc.Da_Puntos(5);
-			Destroy(this);
+			Destroy(gameObject);
 
 		}
 	}

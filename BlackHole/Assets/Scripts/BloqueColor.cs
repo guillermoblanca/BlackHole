@@ -14,13 +14,14 @@ public class BloqueColor : MonoBehaviour
 
 	void Awake()
 	{
-		scriptpersonaje = GetComponent <CambiaColor_CH>();
+		scriptpersonaje =GameObject.FindWithTag ("Player").GetComponent <CambiaColor_CH>();
 		boxcollider2D = GetComponent<BoxCollider2D>();
 		spriterenderer = GetComponent<SpriteRenderer>();
+		ColoresBloque();
 	}
 	void Update()
 	{
-		ColoresBloque();
+
 		if (Input.GetKeyDown (KeyCode.S))
 		{
 			botonpulsa = true;
@@ -32,8 +33,9 @@ public class BloqueColor : MonoBehaviour
 	}
 	void OnCollisionStay2D(Collision2D objeto) // cuando el personaje colisione si es del mismo color puede traspasarlo
 	{
-		if (objeto.transform.tag == "Player" && colorBloque == scriptpersonaje.ColorPersonaje && horizontal == false)
+		if (objeto.transform.tag == "Player" && !horizontal && colorBloque == scriptpersonaje.ColorPersonaje )
 		{
+
 			boxcollider2D.isTrigger = true;
 		}
 		if (objeto.transform.tag == "Player" && colorBloque == scriptpersonaje.ColorPersonaje && horizontal == true && botonpulsa == true )

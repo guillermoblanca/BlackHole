@@ -21,12 +21,12 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	void MoverIzq(float velocidad)
 	{
-		rg.velocity  = new Vector2 (-velocidad, 0);
+		rg.velocity  = new Vector2 (-velocidad, rg.velocity.y);
 		miraIzq = true;
 	}
 	void MoverDrch(float velocidad)
 	{
-		rg.velocity  = new Vector2(velocidad,0);
+		rg.velocity  = new Vector2(velocidad,rg.velocity.y);
 		miraIzq = false;
 	}
 	 void Salto()
