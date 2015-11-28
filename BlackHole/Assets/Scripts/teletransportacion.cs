@@ -26,7 +26,7 @@ public class teletransportacion : MonoBehaviour {
 
 	}
 	void OnTriggerStay2D (Collider2D col){  //se activa cuando algo se colisiona 
-		if (col.transform.tag == "player"  ) {
+		if (col.transform.tag == "Player"  ) {
 			dentro= true;
 			Debug.Log (destino.transform.name);
 
@@ -35,7 +35,7 @@ public class teletransportacion : MonoBehaviour {
 	}
 	
 	void OnTriggerExit2D (Collider2D col){  //se activa cuando algo se colisiona 
-		if (col.transform.tag == "player"  ) {
+		if (col.transform.tag == "Player"  ) {
 
 			dentro= false;
 			
