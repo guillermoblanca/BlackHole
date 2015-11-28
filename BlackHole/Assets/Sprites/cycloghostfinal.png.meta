@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 70dfee77365a7d946be1b363a42e3bb5
-timeCreated: 1448689524
+guid: 1d2582e67c1a2ac4db5d66922c6f7d0b
+timeCreated: 1448719448
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ghost cycle_0
-    21300002: ghost cycle_1
-    21300004: ghost cycle_2
-    21300006: ghost cycle_3
-    21300008: ghost cycle_4
-    21300010: ghost cycle_5
-    21300012: ghost cycle_6
-    21300014: ghost cycle_7
-    21300016: ghost cycle_8
-    21300018: ghost cycle_9
-    21300020: ghost cycle_10
-    21300022: ghost cycle_11
-    21300024: ghost cycle_12
-    21300026: ghost cycle_13
+    21300000: cycloghostfinal_0
+    21300002: cycloghostfinal_1
+    21300004: cycloghostfinal_2
+    21300006: cycloghostfinal_3
+    21300008: cycloghostfinal_4
+    21300010: cycloghostfinal_5
+    21300012: cycloghostfinal_6
+    21300014: cycloghostfinal_7
+    21300016: cycloghostfinal_8
+    21300018: cycloghostfinal_9
+    21300020: cycloghostfinal_10
+    21300022: cycloghostfinal_11
+    21300024: cycloghostfinal_12
+    21300026: cycloghostfinal_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,143 +64,143 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ghost cycle_0
+    - name: cycloghostfinal_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 269
-        width: 94
-        height: 105
+        x: 11
+        y: 287
+        width: 98
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_1
+    - name: cycloghostfinal_1
       rect:
         serializedVersion: 2
-        x: 108
-        y: 270
-        width: 85
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_2
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 269
-        width: 70
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_3
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 269
-        width: 60
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_4
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 268
-        width: 69
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_5
-      rect:
-        serializedVersion: 2
-        x: 442
-        y: 268
-        width: 86
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_6
-      rect:
-        serializedVersion: 2
-        x: 539
-        y: 269
-        width: 84
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_7
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 75
-        width: 84
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 74
-        width: 91
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_9
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 75
-        width: 65
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_10
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 75
-        width: 63
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_11
-      rect:
-        serializedVersion: 2
-        x: 349
-        y: 74
+        x: 112
+        y: 284
         width: 78
-        height: 105
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_12
+    - name: cycloghostfinal_2
       rect:
         serializedVersion: 2
-        x: 440
-        y: 75
-        width: 81
+        x: 197
+        y: 285
+        width: 63
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 285
+        width: 63
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_4
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 285
+        width: 70
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_5
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 286
+        width: 79
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_6
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 284
+        width: 84
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 91
+        width: 82
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 88
+        width: 83
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 91
+        width: 74
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 3}
+    - name: cycloghostfinal_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 90
+        width: 61
         height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ghost cycle_13
+    - name: cycloghostfinal_11
       rect:
         serializedVersion: 2
-        x: 529
-        y: 76
-        width: 94
-        height: 104
+        x: 342
+        y: 90
+        width: 78
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 91
+        width: 80
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cycloghostfinal_13
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 91
+        width: 103
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
