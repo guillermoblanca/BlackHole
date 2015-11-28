@@ -64,7 +64,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		{
 			MoverDrch(0);
 		}
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Salto ();
 		}
