@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 9583b618ace1eb248b9781ddf5d0174d
+timeCreated: 1448717550
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mancha2_0
+    21300002: mancha2_1
+    21300004: mancha2_2
+    21300006: mancha2_3
+    21300008: mancha2_4
+    21300010: mancha2_5
+    21300012: mancha2_6
+    21300014: mancha2_7
+    21300016: mancha2_8
+    21300018: mancha2_9
+    21300020: mancha2_10
+    21300022: mancha2_11
+    21300024: mancha2_12
+    21300026: mancha2_13
+    21300028: mancha2_14
+    21300030: mancha2_15
+    21300032: mancha2_16
+    21300034: mancha2_17
+    21300036: mancha2_18
+    21300038: mancha2_19
+    21300040: mancha2_20
+    21300042: mancha2_21
+    21300044: mancha2_22
+    21300046: mancha2_23
+    21300048: mancha2_24
+    21300050: mancha2_25
+    21300052: mancha2_26
+    21300054: mancha2_27
+    21300056: mancha2_28
+    21300058: mancha2_29
+    21300060: mancha2_30
+    21300062: mancha2_31
+    21300064: mancha2_32
+    21300066: mancha2_33
+    21300068: mancha2_34
+    21300070: mancha2_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mancha2_0
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1825
+        width: 84
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_1
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1764
+        width: 224
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_2
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1728
+        width: 331
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_3
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1737
+        width: 331
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1395
+        width: 331
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_5
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1395
+        width: 331
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_6
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1687
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_7
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1393
+        width: 331
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1393
+        width: 331
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_9
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1670
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1050
+        width: 331
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1060
+        width: 331
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_12
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1061
+        width: 331
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_13
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1061
+        width: 330
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_14
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 740
+        width: 331
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_15
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 740
+        width: 331
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_16
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 740
+        width: 331
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_17
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 740
+        width: 331
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_18
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 991
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 398
+        width: 331
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_20
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 655
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_21
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 655
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 650
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_23
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 395
+        width: 331
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_24
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 395
+        width: 331
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_25
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 404
+        width: 331
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_26
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 110
+        width: 331
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_27
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 110
+        width: 279
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_28
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 284
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_29
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 277
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_30
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 276
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_31
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 272
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_32
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 217
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_33
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 216
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_34
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 110
+        width: 207
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mancha2_35
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 110
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
