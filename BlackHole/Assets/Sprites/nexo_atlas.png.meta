@@ -1,19 +1,19 @@
 fileFormatVersion: 2
 guid: ae3b930579c625244950a746c896ef5c
-timeCreated: 1448659137
+timeCreated: 1448671969
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: nexo_atlas_0
-    21300002: nexo_atlas_1
+    21300000: cuadro
+    21300002: mesa_redonda
     21300004: nexo_atlas_2
-    21300006: nexo_atlas_3
-    21300008: nexo_atlas_4
-    21300010: nexo_atlas_5
-    21300012: nexo_atlas_6
-    21300014: nexo_atlas_7
-    21300016: nexo_atlas_8
-    21300018: nexo_atlas_9
+    21300006: ventana
+    21300008: puerta
+    21300010: mesa_p
+    21300012: mesa
+    21300014: candelabro
+    21300016: estanteria
+    21300018: suelo
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,7 +60,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: nexo_atlas_0
+    - name: cuadro
       rect:
         serializedVersion: 2
         x: 36
@@ -68,9 +68,9 @@ TextureImporter:
         width: 127
         height: 108
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_1
+    - name: mesa_redonda
       rect:
         serializedVersion: 2
         x: 206
@@ -78,7 +78,7 @@ TextureImporter:
         width: 130
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nexo_atlas_2
       rect:
@@ -88,9 +88,9 @@ TextureImporter:
         width: 139
         height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_3
+    - name: ventana
       rect:
         serializedVersion: 2
         x: 755
@@ -98,9 +98,9 @@ TextureImporter:
         width: 127
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_4
+    - name: puerta
       rect:
         serializedVersion: 2
         x: 58
@@ -108,9 +108,9 @@ TextureImporter:
         width: 148
         height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_5
+    - name: mesa_p
       rect:
         serializedVersion: 2
         x: 227
@@ -118,9 +118,9 @@ TextureImporter:
         width: 147
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_6
+    - name: mesa
       rect:
         serializedVersion: 2
         x: 413
@@ -128,9 +128,9 @@ TextureImporter:
         width: 219
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_7
+    - name: candelabro
       rect:
         serializedVersion: 2
         x: 671
@@ -138,9 +138,9 @@ TextureImporter:
         width: 60
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_8
+    - name: estanteria
       rect:
         serializedVersion: 2
         x: 769
@@ -148,9 +148,9 @@ TextureImporter:
         width: 148
         height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: nexo_atlas_9
+    - name: suelo
       rect:
         serializedVersion: 2
         x: 318
@@ -158,7 +158,7 @@ TextureImporter:
         width: 192
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
