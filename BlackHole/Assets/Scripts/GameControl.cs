@@ -12,6 +12,7 @@ public class GameControl : MonoBehaviour {
 	public Animator anim;
 	public Image tren;
 	public Sprite trenActivo, trenInactivo;
+	public Puerta scriptPuerta;
 	void Awake()
 	{
 		if (!PlayerPrefs.HasKey ("puntosCaramelo"))
@@ -39,7 +40,7 @@ public class GameControl : MonoBehaviour {
 		textoclave.text = ""+objetoClave;
 		if (objetoClave == 1)
 		{
-
+			scriptPuerta.conseguirObjeto();
 			Debug.Log ("tengo uno");
 			tren.overrideSprite=trenActivo;
 		}
