@@ -17,6 +17,7 @@ public class teletransportacion : MonoBehaviour {
 
 	void Update(){
 
+
 		if (Input.GetKeyDown (KeyCode.W)) {
 			pulsado_tecla = true;
 
