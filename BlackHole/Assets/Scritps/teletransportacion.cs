@@ -8,16 +8,16 @@ public class teletransportacion : MonoBehaviour {
 	public string nombre;
 	 public bool dentro = false; 
 	bool pulsado; 
-	GameObject player;
+	GameObject Player;
 	void Awake (){
 		destino= GameObject.Find(nombre);// buscando de mis objetos hijos 
-		player= GameObject.Find("Jugador");
+		Player= GameObject.Find("Jugador");
 	}
 
 	void Update(){
 
 		if (Input.GetKeyDown (KeyCode.W) && dentro) {
-			player.transform.position= destino.transform.position;
+			Player.transform.position= destino.transform.position;
 			Debug.Log("tecla pulsada");
 
 		}
@@ -26,7 +26,7 @@ public class teletransportacion : MonoBehaviour {
 
 	}
 	void OnTriggerStay2D (Collider2D col){  //se activa cuando algo se colisiona 
-		if (col.transform.tag == "player"  ) {
+		if (col.transform.tag == "Player"  ) {
 			dentro= true;
 			Debug.Log (destino.transform.name);
 
@@ -35,7 +35,7 @@ public class teletransportacion : MonoBehaviour {
 	}
 	
 	void OnTriggerExit2D (Collider2D col){  //se activa cuando algo se colisiona 
-		if (col.transform.tag == "player"  ) {
+		if (col.transform.tag == "Player"  ) {
 
 			dentro= false;
 			
