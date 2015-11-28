@@ -42,11 +42,11 @@ public class teletransportacion : MonoBehaviour {
 		}
 		
 	}
-	void OnDrawGizmos(){
+	/*void OnDrawGizmos(){
 
 		Gizmos.color = Color.red;
 		Gizmos.DrawLine(transform.position,destino.transform.position);
-		
+		*/
 		
 	}
 	
@@ -55,4 +55,3 @@ public class teletransportacion : MonoBehaviour {
 
 
 
-}

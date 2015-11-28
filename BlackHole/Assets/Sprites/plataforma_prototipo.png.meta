@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 4b698e05341053447b70ef92b833449c
-timeCreated: 1448651946
-=======
-guid: 26cde1a50b99b5048af33369552226ae
-timeCreated: 1448651205
->>>>>>> origin/master
+timeCreated: 1448659249
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: plataforma_prototipo_0
+    21300002: plataforma_prototipo_1
+    21300004: plataforma_prototipo_2
+    21300006: plataforma_prototipo_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +42,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +53,47 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: plataforma_prototipo_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 394
+        width: 569
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plataforma_prototipo_1
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 107
+        width: 332
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plataforma_prototipo_2
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 116
+        width: 333
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plataforma_prototipo_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 567
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
