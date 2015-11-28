@@ -21,7 +21,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	void MoverIzq(float velocidad)
 	{
-		rg.AddForce (new Vector2 (-velocidad, 0));
+		rg.velocity = new Vector2 (-velocidad, 0);
 		miraIzq = true;
 	}
 	void MoverDrch(float velocidad)
