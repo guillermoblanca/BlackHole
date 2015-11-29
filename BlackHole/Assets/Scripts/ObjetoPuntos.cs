@@ -2,38 +2,27 @@
 using System.Collections;
 
 public class ObjetoPuntos : MonoBehaviour {
-	public bool Clave_objeto;
-	public int puntos;
-	bool dapuntos;
-	public GameControl gc;
-
-	void Awake()
-	{
-
-	}
+	public bool Clave_objeto;// determina si es un objeto clave o no
+	public int puntos; // suma puntos 
+	public GameControl gc;//carga el gc
 
 	void Start(){
-		gc= GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameControl>();
+		gc= GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameControl>(); //encuentra el gc con el tag Gamecontrol para ejecutar la funcion dentro del gameobject
 	}
-	void Update()
-	{
-	
-	}
-
 	void OnTriggerEnter2D (Collider2D objeto)
 	{
 
-		if (objeto.transform.tag == "Player" && !Clave_objeto)
+		if (objeto.transform.tag == "Player" && !Clave_objeto) // si no es objeto clave es caramelo y hace esto
 		{
 
 			//Debug.Log("hago algo");
-			gc.Da_Puntos(5);
-			Destroy(gameObject);
+			gc.Da_Puntos(1); // carga el gc y suma tantos puntos
+			Destroy(gameObject);// destruye este gameobject
 		}
-		if (objeto.transform.tag == "Player" && Clave_objeto)
+		if (objeto.transform.tag == "Player" && Clave_objeto) // es objeto clave y hace eto
 		{
-			gc.Recoge_Clave(1);
-			Destroy(gameObject);
+			gc.Recoge_Clave(1); // carga la variable recoger clave que es 1 
+			Destroy(gameObject); // destruye este gameobject
 		}
 	}
 }
