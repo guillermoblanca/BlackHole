@@ -6,6 +6,9 @@ public enum Coloreado
 }
 public class CambiaColor_CH : MonoBehaviour {
 	public Coloreado ColorPersonaje; // caracteristica que variara algunas habilidades del personaje
+	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
+	private Color verde =  new Color (0.671f , 1f, 0.259f, 0.392f);
+	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
 		// no se puede optimizar con el spriterenderer, debe resolverse prioridad 1
 
 	// hemos querido dividir en voids los colores para meterle habilidades si hay tiempo 
@@ -16,6 +19,9 @@ public class CambiaColor_CH : MonoBehaviour {
 	void Update() //carga la caracteristica CambioColor que ira variando dependiendo de lo que interactue con el 
 	{
 		CambioColor();
+		Debug.Log (rojo);
+		Debug.Log (verde);
+		Debug.Log (azul);
 	}
 
 	public void CambioColor() //hace que pueda cambiar de color si toca un objeto determinado
@@ -38,18 +44,18 @@ public class CambiaColor_CH : MonoBehaviour {
 		}
 	} 
 	void Gris(){
-		GetComponent<SpriteRenderer>().color  = new Color (1f,1f,1f); // el color es el mismo de el inicio
+		GetComponent<SpriteRenderer>().color  = new Color (1f,1f,1f,0.5f); // el color es el mismo de el inicio
 	}	
 	void Rojo()
 	{
-		GetComponent<SpriteRenderer>().color = new Color (1f,0f,0f); // color rojo
+		GetComponent<SpriteRenderer>().color = rojo; // color rojo
 	}
 	void Verde()
 	{
-		GetComponent<SpriteRenderer>().color = new Color(0f,1f,0f); // color verde
+		GetComponent<SpriteRenderer>().color = verde; // color verde
 	}
 	void Azul()
 	{	
-		GetComponent<SpriteRenderer>().color = new Color (0f,0f,1f); // color azul 	
+		GetComponent<SpriteRenderer>().color = azul; // color azul 	
 	}
 }
