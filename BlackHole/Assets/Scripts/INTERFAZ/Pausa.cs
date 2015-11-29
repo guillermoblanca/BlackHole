@@ -33,11 +33,8 @@ public class Pausa : MonoBehaviour {
 		Application.LoadLevel ("04_MenuPrincipal");
 		}
 
-	public void panelopciones (){
-		Time.timeScale = 1;
-		opciones.SetActive(true);
 
-	}
+
 
 	void iniciarAnimacion(){
 		anim.SetTrigger ("ActivarAnimacion");
