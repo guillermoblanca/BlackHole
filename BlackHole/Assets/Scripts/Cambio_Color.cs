@@ -8,6 +8,9 @@ public class Cambio_Color : MonoBehaviour
 	public Coloreado colorEspectral;
 	CambiaColor_CH scriptpersonaje;
 	SpriteRenderer spriterenderer;
+	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
+	private Color verde =  new Color (0.671f , 1f, 0.259f, 0.392f);
+	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
 	// Use this for initialization
 	void Start () {
 		scriptpersonaje = GameObject.Find ("Jugador").GetComponent<CambiaColor_CH>();
@@ -35,19 +38,19 @@ public class Cambio_Color : MonoBehaviour
 	{
 		if (colorEspectral == Coloreado.Gris)
 		{
-			spriterenderer.color = new Color (1f,1f,1f);
+			spriterenderer.color = new Color (1f,1f,1f,0.392f);
 		}
 		if (colorEspectral == Coloreado.Rojo)
 		{
-			spriterenderer.color = new Color (1f,0f,0f);
+			spriterenderer.color = rojo;
 		}
 		if (colorEspectral == Coloreado.Verde)
 		{
-			spriterenderer.color = new Color (0f,1f,0f);
+			spriterenderer.color = verde;
 		}
 		if (colorEspectral == Coloreado.Azul)
 		{
-			spriterenderer.color = new Color (0f,0f,1f);
+			spriterenderer.color = azul;
 		}
 	}
 }

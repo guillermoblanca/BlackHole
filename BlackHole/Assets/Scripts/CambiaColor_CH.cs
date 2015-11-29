@@ -19,9 +19,9 @@ public class CambiaColor_CH : MonoBehaviour {
 	void Update() //carga la caracteristica CambioColor que ira variando dependiendo de lo que interactue con el 
 	{
 		CambioColor();
-		Debug.Log (rojo);
-		Debug.Log (verde);
-		Debug.Log (azul);
+		//Debug.Log (rojo);
+		//Debug.Log (verde);
+		//Debug.Log (azul);
 	}
 
 	public void CambioColor() //hace que pueda cambiar de color si toca un objeto determinado

@@ -5,7 +5,10 @@ public class BloqueColor : MonoBehaviour
 {
 	public Coloreado colorBloque;
 	public bool horizontal; // si es horizontal es true si no es false
-	public bool botonpulsa; // para comprobar que esta pulsando el boton 
+	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
+	private Color verde =  new Color (0.671f , 1f, 0.259f, 0.392f);
+	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
+	 bool botonpulsa; // para comprobar que esta pulsando el boton 
 
 	CambiaColor_CH scriptpersonaje; 
 	BoxCollider2D boxcollider2D;
@@ -58,15 +61,15 @@ public class BloqueColor : MonoBehaviour
 		}
 		if (colorBloque == Coloreado.Rojo)
 		{
-			spriterenderer.color = new Color (1f,0f,0f);
+			spriterenderer.color = rojo;
 		}
 		if (colorBloque == Coloreado.Verde)
 		{
-			spriterenderer.color = new Color (0f,1f,0f);
+			spriterenderer.color = verde;
 		}
 		if (colorBloque == Coloreado.Azul)
 		{
-			spriterenderer.color = new Color (0f,0f,1f);
+			spriterenderer.color = azul;
 		}
 	}
 
