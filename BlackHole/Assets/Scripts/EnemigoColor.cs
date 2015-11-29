@@ -7,6 +7,7 @@ public class EnemigoColor : MonoBehaviour {
 	public float tiempo=1;
 	public Transform PuntoA;
 	public Transform PuntoB;
+	public AudioSource sonido;
 
 	private Vector3 origen;
 	private Vector3 destino;
@@ -21,6 +22,7 @@ public class EnemigoColor : MonoBehaviour {
 	void Awake () {
 		scriptpersonaje =GameObject.FindWithTag ("Player").GetComponent <CambiaColor_CH>();
 		spriterenderer = GetComponent <SpriteRenderer>();
+		sonido = GetComponent<AudioSource> ();
 
 		destino = PuntoB.position;
 		origen = PuntoA.position;
@@ -35,6 +37,7 @@ public class EnemigoColor : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D objeto)
 	{
 		if (objeto.transform.tag == "Player"){
+			sonido.Play ();
 			if (colorEnemigo == Coloreado.Gris){
 				scriptpersonaje.ColorPersonaje = Coloreado.Gris;
 
