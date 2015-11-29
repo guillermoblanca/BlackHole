@@ -11,6 +11,9 @@ public class EnemigoColor : MonoBehaviour {
 	private Vector3 origen;
 	private Vector3 destino;
 	private float posicion = 0;
+	private Color rojo = new Color (0.698f,0.212f,0.125f,0.72f);
+	private Color verde =  new Color (0.671f , 1f, 0.259f, 0.72f);
+	private Color azul= new Color (0.145f,0.482f,0.698f,0.72f);
 
 	CambiaColor_CH scriptpersonaje;
 	SpriteRenderer spriterenderer;
@@ -58,19 +61,19 @@ public class EnemigoColor : MonoBehaviour {
 	{
 		if (colorEnemigo == Coloreado.Gris)
 		{
-			spriterenderer.color = new Color (1f,1f,1f);
+			spriterenderer.color = new Color (1f,1f,1f,0.72f);
 		}
 		if (colorEnemigo == Coloreado.Rojo)
 		{
-			spriterenderer.color = new Color (1f,0f,0f);
+			spriterenderer.color = rojo;
 		}
 		if (colorEnemigo == Coloreado.Verde)
 		{
-			spriterenderer.color = new Color (0f,1f,0f);
+			spriterenderer.color = verde;
 		}
 		if (colorEnemigo == Coloreado.Azul)
 		{
-			spriterenderer.color = new Color (0f,0f,1f);
+			spriterenderer.color = azul;
 		}
 	}
 	void Movimiento()
