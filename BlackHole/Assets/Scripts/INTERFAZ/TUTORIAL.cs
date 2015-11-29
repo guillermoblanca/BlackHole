@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class TUTORIAL : MonoBehaviour {
-
+	public GameObject tutorial;
 	private AudioSource sonido;
 	public GameObject sig1, sig2, sig3, sig4, sig5, emp;
 
@@ -51,6 +51,7 @@ public class TUTORIAL : MonoBehaviour {
 
 		sonido.Play ();
 		emp.SetActive (false);
+		Destroy(tutorial);
 	}
 
 	// Update is called once per frame
