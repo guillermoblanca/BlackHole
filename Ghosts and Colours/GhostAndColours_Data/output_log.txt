@@ -1,0 +1,80 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660   (ID=0x11c0)
+    Vendor:   NVIDIA
+    VRAM:     1988 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.135 seconds
+desktop: 2048x1152 60Hz; virtual: 2048x1152 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Merlockes\Desktop\juego completo 2.0\GhostAndColours_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4b4 -> priority: 1 
+Empieza
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Pulsado
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.081811 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1396.
+Total: 0.696267 ms (FindLiveObjects: 0.056913 ms CreateObjectMapping: 0.033128 ms MarkObjects: 0.538269 ms  DeleteObjects: 0.067389 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.694939 ms
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1371.
+Total: 0.665120 ms (FindLiveObjects: 0.075318 ms CreateObjectMapping: 0.036526 ms MarkObjects: 0.496079 ms  DeleteObjects: 0.055780 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.134672 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 1144.
+Total: 0.612454 ms (FindLiveObjects: 0.069371 ms CreateObjectMapping: 0.045870 ms MarkObjects: 0.451342 ms  DeleteObjects: 0.044737 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.375545 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at EnemigoColor.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2480.
+Total: 0.939493 ms (FindLiveObjects: 0.131665 ms CreateObjectMapping: 0.075318 ms MarkObjects: 0.711557 ms  DeleteObjects: 0.019820 ms)
+
+ENTRO
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.670871 ms
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 255.
+Total: 0.615003 ms (FindLiveObjects: 0.041623 ms CreateObjectMapping: 0.108446 ms MarkObjects: 0.294193 ms  DeleteObjects: 0.169040 ms)
+
+Empieza
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Pulsado
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
