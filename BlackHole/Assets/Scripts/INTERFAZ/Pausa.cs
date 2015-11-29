@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Pausa : MonoBehaviour {
-	public GameObject opciones;
+
 	public GameObject menu;
 	public Animator anim;
 	public float retraso;
