@@ -1,7 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 357a0d170d02fc54cb8406a0c77abe1f
-timeCreated: 1448753846
+timeCreated: 1448756432
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,33 +19,11 @@ TextureImporter:
     21300024: atlas_lvl1_12
     21300026: atlas_lvl1_13
     21300028: atlas_lvl1_14
-=======
-guid: 27ea9cc8f198ec14abe648ca4d7e0b1e
-timeCreated: 1448753459
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName:
-    21300000: cuadro
-    21300002: cuadro_1
-    21300004: vela
-    21300006: mesa
-    21300008: lampara
-    21300010: atlas_lvl1_5
-    21300012: atlas_lvl1_6
-    21300014: elevador
-    21300016: estanteria_2
-    21300018: puerta_abierta
-    21300020: atlas_lvl1_10
-    21300022: caja
-    21300024: puerta_cerrada
-    21300026: brecha
-    21300028: ventana_2
->>>>>>> origin/master
     21300030: atlas_lvl1_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -69,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -89,11 +66,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-<<<<<<< HEAD
     - name: atlas_lvl1_0
-=======
-    - name: cuadro
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 45
@@ -101,15 +74,9 @@ TextureImporter:
         width: 331
         height: 249
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_1
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: cuadro_1
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 406
@@ -117,47 +84,29 @@ TextureImporter:
         width: 332
         height: 249
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_2
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: vela
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 777
         y: 817
         width: 150
-        height: 218
+        height: 239
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_3
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mesa
->>>>>>> origin/master
       rect:
         serializedVersion: 2
-        x: 968
+        x: 971
         y: 790
-        width: 677
+        width: 673
         height: 300
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_4
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lampara
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 1650
@@ -165,11 +114,7 @@ TextureImporter:
         width: 545
         height: 414
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: .5, y: .5}
->>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_5
       rect:
@@ -191,11 +136,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
     - name: atlas_lvl1_7
-=======
-    - name: elevador
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 386
@@ -203,15 +144,9 @@ TextureImporter:
         width: 343
         height: 61
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_8
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: estanteria_2
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 778
@@ -219,15 +154,9 @@ TextureImporter:
         width: 535
         height: 756
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_9
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: puerta_abierta
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 1330
@@ -235,11 +164,7 @@ TextureImporter:
         width: 355
         height: 721
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: .5, y: .5}
->>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_10
       rect:
@@ -251,11 +176,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
     - name: atlas_lvl1_11
-=======
-    - name: caja
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 216
@@ -263,15 +184,9 @@ TextureImporter:
         width: 109
         height: 113
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_12
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: puerta_cerrada
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 1703
@@ -279,15 +194,9 @@ TextureImporter:
         width: 281
         height: 689
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_13
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: brecha
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 2045
@@ -295,15 +204,9 @@ TextureImporter:
         width: 100
         height: 382
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_14
-=======
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ventana_2
->>>>>>> origin/master
       rect:
         serializedVersion: 2
         x: 53
@@ -311,11 +214,7 @@ TextureImporter:
         width: 550
         height: 489
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: .5, y: .5}
->>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_lvl1_15
       rect:
