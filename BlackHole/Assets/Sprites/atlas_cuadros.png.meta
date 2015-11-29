@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4e8aa1971f1e87a499102a7beb614bc3
 timeCreated: 1448756378
 licenseType: Free
@@ -12,6 +13,13 @@ TextureImporter:
     21300010: atlas_cuadros_5
     21300012: atlas_cuadros_6
     21300014: atlas_cuadros_7
+=======
+guid: 48a1d3baebbe9fa4aa0b8a4f51583029
+timeCreated: 1448755770
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> 196281a9d3831b62ef4d2fd71303935568fcb9ed
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +46,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: 16
+=======
+    aniso: -1
+>>>>>>> 196281a9d3831b62ef4d2fd71303935568fcb9ed
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -46,7 +58,11 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> 196281a9d3831b62ef4d2fd71303935568fcb9ed
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,6 +73,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites:
     - name: atlas_cuadros_0
       rect:
@@ -138,6 +155,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+=======
+    sprites: []
+>>>>>>> 196281a9d3831b62ef4d2fd71303935568fcb9ed
   spritePackingTag: 
   userData: 
   assetBundleName: 
