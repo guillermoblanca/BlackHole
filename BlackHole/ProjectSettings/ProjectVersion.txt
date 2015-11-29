@@ -1,10 +1,2 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-m_EditorVersion: 5.2.2f1
-=======
-m_EditorVersion: 5.2.1f1
->>>>>>> 2cb22891f20323a764b27aa6cd91e26f6d996c86
-=======
 m_EditorVersion: 5.2.3f1
->>>>>>> parent of 7dc0071... Diseño interfaz
 m_StandardAssetsVersion: 0

@@ -1,9 +1,33 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fcdcdfe92f9afbb4a9a910315f62b4b8
 timeCreated: 1448768871
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+<<<<<<< HEAD
+guid: 911277aff9d61c34f98f30e3c9d741b3
+timeCreated: 1448769202
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+guid: 1866b7b17731e3a41b1d3a1aa10c581f
+timeCreated: 1448769286
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BGTILES_0
+    21300002: BGTILES_1
+    21300004: BGTILES_2
+    21300006: BGTILES_3
+    21300008: BGTILES_4
+    21300010: BGTILES_5
+    21300012: BGTILES_6
+    21300014: BGTILES_7
+>>>>>>> 4d682c637582c023c49febf0689aec03ecb1a0b8
+>>>>>>> b3621eee27bbfbb9a66ebac14338553ed814de71
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +54,15 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
+=======
+<<<<<<< HEAD
+    aniso: -1
+=======
+    aniso: 16
+>>>>>>> 4d682c637582c023c49febf0689aec03ecb1a0b8
+>>>>>>> b3621eee27bbfbb9a66ebac14338553ed814de71
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +70,15 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
+<<<<<<< HEAD
   spriteMode: 1
+=======
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> 4d682c637582c023c49febf0689aec03ecb1a0b8
+>>>>>>> b3621eee27bbfbb9a66ebac14338553ed814de71
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +89,95 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+<<<<<<< HEAD
+    sprites: []
+=======
+    sprites:
+    - name: BGTILES_0
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 2690
+        width: 2781
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 687
+        width: 494
+        height: 1346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_2
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 927
+        width: 1563
+        height: 1507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_3
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1767
+        width: 783
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_4
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 678
+        width: 495
+        height: 1346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_5
+      rect:
+        serializedVersion: 2
+        x: 3477
+        y: 927
+        width: 783
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_6
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 23
+        width: 1558
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BGTILES_7
+      rect:
+        serializedVersion: 2
+        x: 3477
+        y: 23
+        width: 783
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> 4d682c637582c023c49febf0689aec03ecb1a0b8
+>>>>>>> b3621eee27bbfbb9a66ebac14338553ed814de71
   spritePackingTag: 
   userData: 
   assetBundleName: 
