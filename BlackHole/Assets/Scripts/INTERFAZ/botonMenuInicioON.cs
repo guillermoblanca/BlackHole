@@ -3,7 +3,7 @@ using System.Collections;
 
 public class botonMenuInicioON : MonoBehaviour {
 
-
+	private AudioSource sonido;
 	Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,7 @@ public class botonMenuInicioON : MonoBehaviour {
 	// Update is called once per frame
 	public void cargaMenu ()
 	{
-		
+		sonido = GetComponent<AudioSource> ();
 		anim.SetBool ("cargamenu", true);
 		Debug.Log ("Pulsado");
 
