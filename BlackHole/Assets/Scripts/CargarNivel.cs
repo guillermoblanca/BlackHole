@@ -25,21 +25,23 @@ public class CargarNivel : MonoBehaviour {
 		}
 	}
 	void OnTriggerStay2D (Collider2D objeto) { // para que colisione el jugador este dentro
-	switch(nivel) // para determinar los diferentes casos
+		if (objeto.transform.tag == "Player" && pulsarW)
+		{
+		switch(nivel) // para determinar los diferentes casos
 		{
 		case(1):
-			if (objeto.transform.tag == "Player" && pulsarW)// variable personaje y controlW
-			{
-			print ("nivel1"); // pruebas
+			// variable personaje y controlW
+			//print ("nivel1"); // pruebas
 			Application.LoadLevel("01_Azul"); // para cargar el nivel azul
-			}
 			break;
 		case(2):
-
+			//print ("nivel2");
+				Application.LoadLevel("02_nivelVerde_01");
 			break;
 		default:
 			print ("no hay nivel, determinar el numero del orden");
 			break;
+		}
 		}
 	}
 }
