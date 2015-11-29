@@ -34,13 +34,13 @@ public class teletransportacion : MonoBehaviour {
 			dentro = false;
 			pulsado_tecla = false;
 			Player.transform.position= destino.transform.position;
-			Debug.Log("tecla pulsada");
+			//Debug.Log("tecla pulsada");
 		}
 	}
 	void OnTriggerStay2D (Collider2D col){  //se activa cuando algo se colisiona 
 		if (col.transform.tag == "Player"  ) {
 			dentro= true;
-			Debug.Log (destino.transform.name);
+			//Debug.Log (destino.transform.name);
 
 		}
 
