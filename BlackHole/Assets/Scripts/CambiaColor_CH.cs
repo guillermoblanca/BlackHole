@@ -14,6 +14,7 @@ public class CambiaColor_CH : MonoBehaviour {
 	// hemos querido dividir en voids los colores para meterle habilidades si hay tiempo 
 	void Awake ()
 	{
+
 		ColorPersonaje = Coloreado.Gris; // inicia siempre en gris
 	}
 	void Update() //carga la caracteristica CambioColor que ira variando dependiendo de lo que interactue con el 
