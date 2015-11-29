@@ -5,9 +5,6 @@ public class MovimientoPersonaje : MonoBehaviour {
 
 
 	[Range (0,10)] public float velocidad = 10f;
-
-
-
 	private AudioSource sonido;
 	public float fuerzaSalto;
 	public LayerMask capa;
@@ -15,15 +12,8 @@ public class MovimientoPersonaje : MonoBehaviour {
 	bool miraIzq;
 	bool enSuelo;
 	Transform detectorSuelo;
-
-
-	// falta que salte solo una vez 
 	Rigidbody2D rg;
 	Animator anim;
-
-
-
-
 	void Awake()
 	{
 		anim = GetComponent <Animator> ();
@@ -32,8 +22,6 @@ public class MovimientoPersonaje : MonoBehaviour {
 	}
 	void Update() // Controles
 	{
-
-
 		Controles();
 	}
 	void MoverIzq(float velocidad)

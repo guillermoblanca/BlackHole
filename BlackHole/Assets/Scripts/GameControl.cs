@@ -26,6 +26,7 @@ public class GameControl : MonoBehaviour {
 
 		puntosCaramelo = PlayerPrefs.GetInt ("puntosCaramelo");
 		objetoClave = PlayerPrefs.GetInt ("objetoClave");
+		
 		//anim =GameObject.Find ("ImagenTren").GetComponent<Image>();
 	}
 	
