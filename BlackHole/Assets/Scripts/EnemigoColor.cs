@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class EnemigoColor : MonoBehaviour {
-
+	public GameObject particulasRojas, particulasVerdes, particulasAzules; // introduce el sistema de particulas
 	public Coloreado colorEnemigo;
 	public float tiempo=1;
 	public Transform PuntoA;
@@ -18,6 +18,7 @@ public class EnemigoColor : MonoBehaviour {
 	void Awake () {
 		scriptpersonaje =GameObject.FindWithTag ("Player").GetComponent <CambiaColor_CH>();
 		spriterenderer = GetComponent <SpriteRenderer>();
+
 		destino = PuntoB.position;
 		origen = PuntoA.position;
 		posicion = 0;
@@ -33,15 +34,22 @@ public class EnemigoColor : MonoBehaviour {
 		if (objeto.transform.tag == "Player"){
 			if (colorEnemigo == Coloreado.Gris){
 				scriptpersonaje.ColorPersonaje = Coloreado.Gris;
+
 			}
 			if (colorEnemigo == Coloreado.Rojo){
 				scriptpersonaje.ColorPersonaje = Coloreado.Rojo;
+				GameObject particulas_Rojas = (GameObject)Instantiate (particulasRojas, transform.position, transform.rotation);
+				Destroy(particulas_Rojas,1f);
 			}
 			if (colorEnemigo == Coloreado.Verde){
 				scriptpersonaje.ColorPersonaje = Coloreado.Verde;
+				GameObject particulas_Verdes = (GameObject)Instantiate (particulasVerdes, transform.position, transform.rotation);
+				Destroy(particulas_Verdes,1f);
 			}
 			if (colorEnemigo == Coloreado.Azul){
 				scriptpersonaje.ColorPersonaje = Coloreado.Azul;
+				GameObject particulas_Azules = (GameObject)Instantiate (particulasAzules, transform.position, transform.rotation);
+				Destroy(particulas_Azules,1f);
 			}
 		}
 		

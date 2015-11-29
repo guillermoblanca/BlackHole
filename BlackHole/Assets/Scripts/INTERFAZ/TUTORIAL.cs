@@ -4,7 +4,7 @@ using System.Collections;
 public class TUTORIAL : MonoBehaviour {
 
 	private AudioSource sonido;
-	public GameObject sig1, sig2,sig3,sig4,emp;
+	public GameObject sig1, sig2, sig3, sig4, sig5, emp;
 
 	void Awake()
 	{
@@ -37,6 +37,13 @@ public class TUTORIAL : MonoBehaviour {
 
 		sonido.Play ();
 		sig4.SetActive (false);
+		sig5.SetActive (true);
+	}
+
+	public void Siguiente5 (){
+		
+		sonido.Play ();
+		sig5.SetActive (false);
 		emp.SetActive (true);
 	}
 

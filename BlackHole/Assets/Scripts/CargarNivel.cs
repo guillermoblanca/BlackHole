@@ -38,6 +38,9 @@ public class CargarNivel : MonoBehaviour {
 			//print ("nivel2");
 				Application.LoadLevel("02_nivelVerde_01");
 			break;
+			case (3):
+
+				break;
 		default:
 			print ("no hay nivel, determinar el numero del orden");
 			break;
