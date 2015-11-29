@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Cambio_Color : MonoBehaviour 
 {
+	private AudioSource sonido;
+
 	public Coloreado colorEspectral;
 	CambiaColor_CH scriptpersonaje;
 	SpriteRenderer spriterenderer;
@@ -10,6 +12,7 @@ public class Cambio_Color : MonoBehaviour
 	void Start () {
 		scriptpersonaje = GameObject.Find ("Jugador").GetComponent<CambiaColor_CH>();
 		spriterenderer = GetComponent<SpriteRenderer>();
+		sonido = GetComponent<AudioSource> ();
 
 	}
 	
@@ -23,6 +26,8 @@ public class Cambio_Color : MonoBehaviour
 		if (objeto.transform.tag == "Player")
 		{
 			scriptpersonaje.ColorPersonaje = colorEspectral;
+			sonido.Play ();
+
 		}
 
 	}
