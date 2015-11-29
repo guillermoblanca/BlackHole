@@ -1,14 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TUTORIAL : MonoBehaviour {
 
 	private AudioSource sonido;
-	public GameObject sig1, sig2,sig3,sig4,emp;
+	public GameObject sig1, sig2, sig3, sig4, sig5, emp;	
 
 	void Awake()
 	{
-		sonido = GetComponent<AudioSource> ();
+		sonido = GetComponent<AudioSource> (); // Obtiene el
 	}
 
 	public void Siguiente1 (){
@@ -37,7 +37,16 @@ public class TUTORIAL : MonoBehaviour {
 
 		sonido.Play ();
 		sig4.SetActive (false);
-		emp.SetActive (true);
+		sig5.SetActive (true);
+	
+	}
+
+	public void Siguiente5 (){
+			
+			sonido.Play ();
+			sig5.SetActive (false);
+			emp.SetActive (true);
+	
 	}
 
 	public void empezar (){
