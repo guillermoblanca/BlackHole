@@ -5,6 +5,9 @@ public class MovimientoPersonaje : MonoBehaviour {
 
 
 	[Range (0,10)] public float velocidad = 10f;
+
+
+
 	private AudioSource sonido;
 	public float fuerzaSalto;
 	public LayerMask capa;
@@ -12,6 +15,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 	bool miraIzq;
 	bool enSuelo;
 	Transform detectorSuelo;
+
 
 	// falta que salte solo una vez 
 	Rigidbody2D rg;
@@ -52,7 +56,8 @@ public class MovimientoPersonaje : MonoBehaviour {
 		rg.velocity = new Vector2(0,fuerzaSalto);
 			sonido.Play ();
 		}
-		}
+	
+	}
 	void Flip()
 	{
 		if (miraIzq)
@@ -91,6 +96,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
+
 			Salto ();
 
 		}
