@@ -30,7 +30,7 @@ public class Pausa : MonoBehaviour {
 
 	public void salir (){
 		Time.timeScale = 1;
-		Application.LoadLevel ("04_MenuPrincipal");
+		Application.LoadLevel ("00_MenuPrincipal");
 		}
 
 
