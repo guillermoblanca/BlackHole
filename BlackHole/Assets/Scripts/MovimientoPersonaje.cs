@@ -8,9 +8,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 	private AudioSource sonido; // para cargar sonido de salto
 	public float fuerzaSalto; // para determinar la fuerza con la que salta 
 	public LayerMask capa; // para determinar la capa por la que puede saltar, es suelo
-	bool enSalto;// variable para que realice solo un salto
 	bool miraIzq;// parar determinar hacia que lado mira y que mire hacia esto
-
 	Rigidbody2D rg;// para utilizar las variables de rigidbody2d
 	Animator anim; // para cargar animaciones
 	void Awake() //carga al inicio de todo
@@ -34,17 +32,17 @@ public class MovimientoPersonaje : MonoBehaviour {
 	{
 		rg.velocity  = new Vector2(velocidad,rg.velocity.y);
 		miraIzq = false;
-
 	}
 	 void Salto()// funcion para saltar
 	{
+
 		RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);// lanza un rayo hacia el suelo para saber en que capa esta y si puede sdaltar
 		if (hitdown.collider != null) // si es diferente de nulo y cumple las variables de el rayo puede hacer eso
 		{
 		rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
 			sonido.Play (); // realiza sonido, solo cuando salta
 		}
-	
+
 	}
 	void Flip() // hace el giro mediante el escalado del personaje
 	{
@@ -84,10 +82,14 @@ public class MovimientoPersonaje : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Space))//salto espacio
 		{
-
 			Salto ();
-
+			anim.SetBool("Ensalto", true);
+			Invoke("finSalto",1f);
 		}
+	}
+	void finSalto()
+	{
+		anim.SetBool("Ensalto", false);
 	}
 }
 
