@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class botonEmpezar : MonoBehaviour {
-
+	public GameObject titulo;
     Animator anim;
 	
 	
@@ -18,7 +18,7 @@ public class botonEmpezar : MonoBehaviour {
 
 			anim.SetBool ("empezando", true);
 			Debug.Log ("Empieza");
-
+			titulo.SetActive (false);
     }
 
 
