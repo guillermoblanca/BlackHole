@@ -35,7 +35,7 @@ public class Puerta : MonoBehaviour {
 		{
 		if (objeto.transform.tag == "Player" && abierto)
 		{
-			Application.LoadLevel("Hall");
+			Application.LoadLevel("00_Hall");
 		}
 		}
 	}

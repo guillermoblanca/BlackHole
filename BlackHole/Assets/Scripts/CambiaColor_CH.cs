@@ -44,7 +44,7 @@ public class CambiaColor_CH : MonoBehaviour {
 		}
 	} 
 	void Gris(){
-		GetComponent<SpriteRenderer>().color  = new Color (1f,1f,1f,0.5f); // el color es el mismo de el inicio
+		GetComponent<SpriteRenderer>().color  = new Color (1f,1f,1f,0.392f); // el color es el mismo de el inicio
 	}	
 	void Rojo()
 	{
