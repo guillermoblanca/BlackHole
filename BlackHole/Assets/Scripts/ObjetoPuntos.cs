@@ -16,7 +16,7 @@ public class ObjetoPuntos : MonoBehaviour {
 
 		if (objeto.transform.tag == "Player" && !Clave_objeto) // si no es objeto clave es caramelo y hace esto
 		{sonido.Play ();
-			Debug.Log(sonido);
+			//Debug.Log(sonido);
 
 			//Debug.Log("hago algo");
 			gc.Da_Puntos(1); // carga el gc y suma tantos puntos
@@ -24,9 +24,10 @@ public class ObjetoPuntos : MonoBehaviour {
 
 		}
 		if (objeto.transform.tag == "Player" && Clave_objeto) // es objeto clave y hace eto
-		{
+		{sonido.Play ();
+			//Debug.Log(sonido);
 			gc.Recoge_Clave(1); // carga la variable recoger clave que es 1 
-			Destroy(gameObject); // destruye este gameobject
+			Destroy(gameObject,0.9f); // destruye este gameobject
 		}
 	}
 }
