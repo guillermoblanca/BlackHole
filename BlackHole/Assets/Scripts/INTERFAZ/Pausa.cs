@@ -16,7 +16,7 @@ public class Pausa : MonoBehaviour {
 		yield return new WaitForSeconds (retraso);
 		menu.SetActive (true);
 		yield return new WaitForSeconds (1);
-		print ("ENTRO");
+		//print ("ENTRO");
 		Time.timeScale=0;
 
 
