@@ -28,11 +28,9 @@ public class BloqueColor : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.S))
 		{
 			botonpulsa = true;
+			Invoke ("pulsafalse",2f);
 		}
-		if (Input.GetKeyUp (KeyCode.S))
-		{
-			botonpulsa = false;
-		}
+
 	}
 	void OnCollisionStay2D(Collision2D objeto) // cuando el personaje colisione si es del mismo color puede traspasarlo
 	{
@@ -44,13 +42,6 @@ public class BloqueColor : MonoBehaviour
 		if (objeto.transform.tag == "Player" && colorBloque == scriptpersonaje.ColorPersonaje && horizontal == true && botonpulsa == true )
 		{
 			boxcollider2D.isTrigger = true;
-		}
-	}
-	void OnTriggerExit2D(Collider2D objeto)
-	{
-		if (objeto.transform.tag == "Player")
-		{
-			boxcollider2D.isTrigger = false;
 		}
 	}
 	void ColoresBloque()
@@ -71,6 +62,10 @@ public class BloqueColor : MonoBehaviour
 		{
 			spriterenderer.color = azul;
 		}
+	}
+	void pulsafalse (){
+		botonpulsa = false;
+		boxcollider2D.isTrigger = false;
 	}
 
 }
