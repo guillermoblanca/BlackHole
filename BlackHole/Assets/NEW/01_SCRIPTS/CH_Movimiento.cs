@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent (typeof (Rigidbody2D))]
+
 public enum Colores 
 {
 	Gris,Rojo,Verde,Azul
 }
+[RequireComponent (typeof (Rigidbody2D))]	
 public class CH_Movimiento : MonoBehaviour {
 	[Range(1f,10f)]		public float velocidad 		= 	10f;
 	[Range(0f, 5f)]		public float fuerzaSalto 	= 	5f;
@@ -75,19 +76,19 @@ public class CH_Movimiento : MonoBehaviour {
 	{
 		if (colorPersonaje == Colores.Gris)
 		{
-			Gris();
+			
 		}
 		if (colorPersonaje ==  Colores.Rojo)
 		{
-			Rojo();
+			
 		}
 		if (colorPersonaje == Colores.Verde)
 		{
-			Verde();
+			
 		}
 		if (colorPersonaje == Colores.Azul)
 		{
-			Azul();
+			
 		}
 	} 
 }
