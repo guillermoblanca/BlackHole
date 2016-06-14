@@ -10,9 +10,7 @@ public class ZonaCambioColor : MonoBehaviour {
 	private Color rojo = new Color (0.698f,0.212f,0.125f);
 	private Color verde =  new Color (0.671f , 1f, 0.259f);
 	private Color azul= new Color (0.145f,0.482f,0.698f);
-
-	BoxCollider2D col;
-
+	private BoxCollider2D col;
 	void Start(){
 		col = GetComponent<BoxCollider2D> ();
 		col.isTrigger = true;
