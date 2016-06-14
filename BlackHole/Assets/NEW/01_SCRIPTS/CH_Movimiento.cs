@@ -32,7 +32,7 @@ public class CH_Movimiento : MonoBehaviour {
 		comp_rg.constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
-	void FixedUpdate(){
+	void Update(){
 		Controles ();
 		CambioColor ();
 		Debug.DrawRay (transform.position, -transform.up, Color.red);
@@ -69,10 +69,10 @@ public class CH_Movimiento : MonoBehaviour {
 			RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);
 			if (hitdown.collider != null) 
 			{
-				rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
+				comp_rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
 			}
 		}
-
+	}
 	public void CambioColor() //hace que pueda cambiar de color si toca un objeto determinado
 	{
 		/*Dependiendo de la habilidad seleccionada se activan
