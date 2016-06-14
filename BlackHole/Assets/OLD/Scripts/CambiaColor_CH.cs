@@ -17,7 +17,7 @@ public class CambiaColor_CH : MonoBehaviour {
 
 		ColorPersonaje = Coloreado.Gris; // inicia siempre en gris
 	}
-	void Update() //carga la caracteristica CambioColor que ira variando dependiendo de lo que interactue con el 
+	void FixedUpdate() //carga la caracteristica CambioColor que ira variando dependiendo de lo que interactue con el 
 	{
 		CambioColor();
 		//Debug.Log (rojo);

@@ -16,14 +16,14 @@ public class CH_Movimiento : MonoBehaviour {
 	AudioSource comp_audiosourse;
 	Rigidbody2D comp_rg;
 	Animator comp_anim;
-	SpriteRenderer comp_render;
+	private SpriteRenderer comp_render;
 
 	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
 	private Color verde =  new Color (0.671f , 1f, 0.259f, 0.392f);
 	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
 
 	void Awake(){
-		
+		name = "Player";
 		transform.gameObject.tag = "Player";
 		comp_rg = GetComponent<Rigidbody2D> ();
 		comp_anim = GetComponent<Animator> ();
