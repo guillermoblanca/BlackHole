@@ -12,7 +12,7 @@ public class CH_Movimiento : MonoBehaviour {
 
 	public Colores colorPersonaje;
 
-	LayerMask capa;						
+	public 	LayerMask capa;						
 	AudioSource comp_audiosourse;
 	Rigidbody2D comp_rg;
 	Animator comp_anim;
@@ -23,16 +23,19 @@ public class CH_Movimiento : MonoBehaviour {
 	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
 
 	void Awake(){
+		
+		transform.gameObject.tag = "Player";
 		comp_rg = GetComponent<Rigidbody2D> ();
 		comp_anim = GetComponent<Animator> ();
 		comp_audiosourse = GetComponent<AudioSource> ();
 		comp_render = GetComponent<SpriteRenderer> ();
-
 		comp_rg.constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
-	void Update(){
+	void FixedUpdate(){
 		Controles ();
+		CambioColor ();
+		Debug.DrawRay (transform.position, -transform.up, Color.red);
 	}
 
 	void Controles()
@@ -61,34 +64,38 @@ public class CH_Movimiento : MonoBehaviour {
 				comp_rg.velocity = new Vector2 (01.1f, comp_rg.velocity.y);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Space) ){ //arreglar salto
-			//Debug.Log ("Space");
-			RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up,1,capa);
-			if (hitdown != null) {
-				comp_rg.velocity = new Vector2 (0, fuerzaSalto);
-				Debug.Log ("suelo");
-			} else {
-
+		if (Input.GetKeyDown(KeyCode.Space))//salto espacio
+		{
+			RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);
+			if (hitdown.collider != null) 
+			{
+				rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
 			}
 		}
-	}
+
 	public void CambioColor() //hace que pueda cambiar de color si toca un objeto determinado
 	{
+		/*Dependiendo de la habilidad seleccionada se activan
+		 * una serie de poderes
+		 */
 		if (colorPersonaje == Colores.Gris)
 		{
-			
+			comp_render.color = new Color (1, 1, 1, 0.5f);
+			transform.localScale = new Vector3 (1f, 1f, 1f);
+		
 		}
 		if (colorPersonaje ==  Colores.Rojo)
 		{
-			
+			comp_render.color = rojo;
 		}
 		if (colorPersonaje == Colores.Verde)
 		{
-			
+			comp_render.color = verde;
 		}
 		if (colorPersonaje == Colores.Azul)
 		{
-			
+			comp_render.color = azul;
+		//	transform.localScale = new Vector3 (0.5f, 0.5f);
 		}
 	} 
 }

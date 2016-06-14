@@ -36,12 +36,8 @@ public class MovimientoPersonaje : MonoBehaviour {
 	 void Salto()// funcion para saltar
 	{
 
-		RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);// lanza un rayo hacia el suelo para saber en que capa esta y si puede sdaltar
-		if (hitdown.collider != null) // si es diferente de nulo y cumple las variables de el rayo puede hacer eso
-		{
-		rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
-			sonido.Play (); // realiza sonido, solo cuando salta
-		}
+
+
 
 	}
 	void Flip() // hace el giro mediante el escalado del personaje
@@ -82,10 +78,15 @@ public class MovimientoPersonaje : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Space))//salto espacio
 		{
-			Salto ();
+		RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);// lanza un rayo hacia el suelo para saber en que capa esta y si puede sdaltar
+		if (hitdown.collider != null) // si es diferente de nulo y cumple las variables de el rayo puede hacer eso
+		{
+			rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
+			sonido.Play (); // realiza sonido, solo cuando salta 	 	
 			anim.SetBool("Ensalto", true);
 			Invoke("finSalto",1f);
 		}
+	}
 	}
 	void finSalto()
 	{
