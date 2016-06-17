@@ -16,6 +16,10 @@ public class GameControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	public void SumaCaramelos(){
+		return;
+		puntosCaramelos++; 
+	}
 	void Update () {
 		
 		if (objetoClave_item != null) {

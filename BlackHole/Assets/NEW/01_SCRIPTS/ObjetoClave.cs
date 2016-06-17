@@ -7,6 +7,7 @@ public class ObjetoClave : MonoBehaviour {
 	private SpriteRenderer comp_ren;
 	private AudioSource comp_audio;
 	public AudioClip objetoclavesonido;
+
 	void Awake(){
 		name = "objetoClave";
 		boxcol = GetComponent<BoxCollider2D> ();
@@ -21,7 +22,6 @@ public class ObjetoClave : MonoBehaviour {
 		if (col.name == "Player") {
 			comp_audio.PlayOneShot (objetoclavesonido,0.5f);
 			comp_ren.enabled = false;
-
 			Destroy (gameObject,1f);
 		}
 	}
