@@ -8,7 +8,7 @@ public enum Colores
 [RequireComponent (typeof (Rigidbody2D))]	
 public class CH_Movimiento : MonoBehaviour {
 	[Range(1f,10f)]		public float velocidad 		= 	10f;
-	[Range(0f, 5f)]		public float fuerzaSalto 	= 	5f;
+	[Range(0f, 10f)]		public float fuerzaSalto 	= 	5f;
 
 	public Colores colorPersonaje;
 
@@ -16,6 +16,8 @@ public class CH_Movimiento : MonoBehaviour {
 	AudioSource comp_audiosourse;
 	Rigidbody2D comp_rg;
 	Animator comp_anim;
+	[HideInInspector] 
+	public bool interactivo =false;
 	private SpriteRenderer comp_render;
 
 	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
@@ -35,13 +37,18 @@ public class CH_Movimiento : MonoBehaviour {
 	void Update(){
 		Controles ();
 		CambioColor ();
-		Debug.DrawRay (transform.position, -transform.up, Color.red);
+		//Debug.DrawRay (transform.position, -transform.up, Color.red);
 	}
 
 	void Controles()
 	{
-		if (Input.GetKey(KeyCode.W) ){
+		if (Input.GetKey (KeyCode.W)) {
 			//Debug.Log ("W");
+			interactivo = true;
+		} else {
+			if (Input.GetKeyUp(KeyCode.W)){
+				interactivo = false;
+			}
 		}
 		if (Input.GetKey (KeyCode.A)) {
 			//Debug.Log ("A");
