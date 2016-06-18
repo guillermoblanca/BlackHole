@@ -20,7 +20,7 @@ public class CargarEscenario : MonoBehaviour {
 			if (ch.interactivo) {
 				Debug.Log ("Puerta abierta");
 				// falta anadir el lvl correspondiente al hall
-				SceneManager.LoadScene("01 pruebas de nivel");
+				SceneManager.LoadScene("02 pruebas gamecontrol");
 
 			}
 		}
