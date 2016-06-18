@@ -45,6 +45,7 @@ public class CH_Movimiento : MonoBehaviour {
 		if (Input.GetKey (KeyCode.W)) {
 			//Debug.Log ("W");
 			interactivo = true;
+
 		} else {
 			if (Input.GetKeyUp(KeyCode.W)){
 				interactivo = false;
