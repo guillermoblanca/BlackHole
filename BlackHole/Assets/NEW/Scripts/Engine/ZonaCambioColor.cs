@@ -15,20 +15,27 @@ public class ZonaCambioColor : MonoBehaviour {
 		new Color (0.671f , 1f, 0.259f),// verde
 		new Color (0.145f,0.482f,0.698f)// azul
 	};
-
-
 	void Start(){
-		
+		Initialize ();
+	}
+	void Update(){
+		Color ();
+	}
+	void OnTriggerEnter2D(Collider2D obj)
+	{
+		if (obj.transform.CompareTag("Player")){
+			personaje.colorPersonaje = colorObjeto;
+		}
+	}
+	private void Initialize()
+	{
 		col = GetComponent<BoxCollider2D> ();
 		col.isTrigger = true;
 		personaje = GameObject.Find("Player").GetComponent<CH_Movimiento> ();
 		comp_render = GetComponent<SpriteRenderer> ();
 	}
-	void Update(){
-		Color ();
-	}
-
-	void Color(){
+	void Color()
+	{
 		if (colorObjeto == Colores.Gris) {
 			comp_render.color = color_colores[0];
 		}
@@ -42,9 +49,5 @@ public class ZonaCambioColor : MonoBehaviour {
 			comp_render.color = color_colores[3] ;
 		}
 	}
-	void OnTriggerEnter2D(Collider2D obj){
-		if (obj.transform.CompareTag("Player")){
-			personaje.colorPersonaje = colorObjeto;
-		}
-	}
+
 }
