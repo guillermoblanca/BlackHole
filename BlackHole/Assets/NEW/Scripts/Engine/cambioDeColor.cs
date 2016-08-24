@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent (typeof (BoxCollider2D))]
-public class ZonaCambioColor : MonoBehaviour {
+
+public class cambioDeColor : MonoBehaviour {
 	public Colores colorObjeto;
 
 	private SpriteRenderer comp_render;
