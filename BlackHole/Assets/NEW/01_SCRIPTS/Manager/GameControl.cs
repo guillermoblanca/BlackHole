@@ -12,10 +12,7 @@ public class GameControl : MonoBehaviour {
 	private GameObject puerta, puertacerrada;
 	// Use this for initialization
 	void Start () {
-		objetoClave_item = GameObject.Find ("objetoClave");
-		puerta = GameObject.Find ("Puerta");
-		puertacerrada = GameObject.Find ("Puerta cerrada");
-		puerta.AddComponent<CargarEscenario> ();
+		Initialize ();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +24,14 @@ public class GameControl : MonoBehaviour {
 		
 		Puerta_Control ();
 }
+	void Initialize(){
+		objetoClave_item = GameObject.Find ("objetoClave");
+		puerta = GameObject.Find ("Puerta");
+		puertacerrada = GameObject.Find ("Puerta cerrada");
+		if (puerta.GetComponent<CargarEscenario> () == null) {
+			puerta.AddComponent<CargarEscenario> ();
+		}
+	}
 	void Puerta_Control(){
 		
 		if (puerta !=null) { // esto da los componentes necesarios a la puerta si se entra en la escena
