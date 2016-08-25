@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class cambioDeColor : MonoBehaviour {
+
 	public Colores colorObjeto;
-
+	public bool transDeColor; 
 	private SpriteRenderer comp_render;
-	CH_Movimiento personaje;
-
 	private BoxCollider2D col;
+	private CH_Movimiento personaje;
 
 	private static Color[] color_colores = {
 		new Color(1f,1f,1f),
@@ -23,7 +23,7 @@ public class cambioDeColor : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D obj)
 	{
-		if (obj.transform.CompareTag("Player")){
+		if (obj.transform.CompareTag("Player") && transDeColor){
 			personaje.colorPersonaje = colorObjeto;
 		}
 	}
