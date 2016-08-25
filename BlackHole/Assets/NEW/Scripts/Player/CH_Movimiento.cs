@@ -7,17 +7,17 @@ public enum Colores
 }
 [RequireComponent (typeof (Rigidbody2D))]	
 public class CH_Movimiento : MonoBehaviour {
+	
 	[Range(1f,10f)]		public float velocidad 		= 	10f;
 	[Range(0f, 10f)]		public float fuerzaSalto 	= 	5f;
 
 	public Colores colorPersonaje;
-
 	public 	LayerMask capa;						
-	AudioSource comp_audiosourse;
-	Rigidbody2D comp_rg;
-	Animator comp_anim;
+
 	[HideInInspector] 
 	public bool interactivo =false;
+	private Rigidbody2D comp_rg;
+	private Animator comp_anim;
 	private SpriteRenderer comp_render;
 
 	private Color rojo = new Color (0.698f,0.212f,0.125f,0.392f);
@@ -25,11 +25,9 @@ public class CH_Movimiento : MonoBehaviour {
 	private Color azul= new Color (0.145f,0.482f,0.698f,0.392f);
 
 	void Awake(){
-		name = "Player";
-		transform.gameObject.tag = "Player";
+		
 		comp_rg = GetComponent<Rigidbody2D> ();
 		comp_anim = GetComponent<Animator> ();
-		comp_audiosourse = GetComponent<AudioSource> ();
 		comp_render = GetComponent<SpriteRenderer> ();
 		comp_rg.constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
@@ -37,41 +35,17 @@ public class CH_Movimiento : MonoBehaviour {
 	void Update(){
 		Controles ();
 		CambioColor ();
+		ControlesGenerales ();
 		//Debug.DrawRay (transform.position, -transform.up, Color.red);
 	}
 
 	void Controles()
 	{
-		if (Input.GetKey (KeyCode.W)) {
-			//Debug.Log ("W");
-			interactivo = true;
+		
+		//comp_rg.velocity = new Vector2 (-1.1f, comp_rg.velocity.y); //getkeyup A
+		//comp_rg.velocity = new Vector2 (01.1f, comp_rg.velocity.y); //getkeyup D
+	
 
-		} else {
-			if (Input.GetKeyUp(KeyCode.W)){
-				interactivo = false;
-			}
-		}
-		if (Input.GetKey (KeyCode.A)) {
-			//Debug.Log ("A");
-			comp_rg.velocity = new Vector2 (-velocidad, comp_rg.velocity.y);
-			comp_render.flipX = true;
-		} else {
-			if (Input.GetKeyUp (KeyCode.A)) {
-				comp_rg.velocity = new Vector2 (-1.1f, comp_rg.velocity.y);
-			}
-		}
-		if (Input.GetKey(KeyCode.S) ){
-			//Debug.Log ("S");
-		}
-		if (Input.GetKey (KeyCode.D)) {
-			//Debug.Log ("D");
-			comp_rg.velocity = new Vector2 (velocidad, comp_rg.velocity.y);
-			comp_render.flipX = false;
-		} else {
-			if (Input.GetKeyUp (KeyCode.D)) {
-				comp_rg.velocity = new Vector2 (01.1f, comp_rg.velocity.y);
-			}
-		}
 		if (Input.GetKeyDown(KeyCode.Space))//salto espacio
 		{
 			RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);
@@ -106,5 +80,29 @@ public class CH_Movimiento : MonoBehaviour {
 		//	transform.localScale = new Vector3 (0.5f, 0.5f);
 		}
 	} 
+	void ControlesGenerales(){
+		float valorH = Input.GetAxis ("Horizontal"); //movimiento horizontal con mando y teclado 
+		float valorV = Input.GetAxis ("Vertical");// movimiento vertical con mando y teclado, por si al final hacemos que suba escaleras o algo parecido
+		bool botonInteractivo = Input.GetButton("Interactivo");
+		interactivo = botonInteractivo; // boton para controlar fuera del script si esta en modo interactivo, REVISAR EN EL FUTURO
+
+
+		if (valorH < 0) {
+			comp_rg.velocity = new Vector2 (-velocidad, comp_rg.velocity.y);
+			comp_render.flipX = true;
+		}else {
+			if (valorH > 0) {
+				comp_rg.velocity = new Vector2 (velocidad, comp_rg.velocity.y);
+				comp_render.flipX = false;
+			}
+		if (Input.GetButton ("Salto")) {
+				RaycastHit2D hitdown = Physics2D.Raycast(transform.position, -transform.up, 1, capa);
+				if (hitdown.collider != null) 
+				{
+					comp_rg.velocity = new Vector2(0,fuerzaSalto); // salta  en y 
+				}
+			}
+		}
+	}
 }
 
